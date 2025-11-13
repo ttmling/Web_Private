@@ -1,0 +1,151 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color: rgb(226, 208, 244);
+}
+.container{
+    width: 600px;
+    margin: 10px auto;
+    padding:10px;
+    background-color: aliceblue;
+    border-radius: 1%;
+}
+.container img{
+    width: 580px;
+    border-radius: 1%;
+}
+.description h4{
+    padding-top: 5px;
+    color: rgb(42, 42, 205);
+}
+.description p{
+    padding: 5px 0;
+    font-size: 15px;
+}
+.description span{
+    color:rgb(9, 206, 206);
+    font-weight: bold;
+}
+.star{
+    color: rgb(222, 222, 26);
+    padding: 10px 0;
+}
+.tag{
+    background-color: rgb(110, 178, 237);
+    border-radius: 20px;
+    padding: 3px;
+    font-size: 13px;
+}
+.tag i{
+    padding: 8px;
+}
+.cart{
+    color: white;
+    background-color: orangered;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+h5{
+    font-size: 15px;
+    padding-top: 20px;
+}
+.chitiet ul{
+    padding: 15px;
+    font-size: 13px;
+}
+.noibat h5{
+    font-size: 15px;
+    padding-top: 20px;
+    color:rgb(31, 109, 173);
+}
+.noibat ul{
+    font-size: 13px;
+    padding: 10px 0;
+    list-style-type: none;
+}
+.noibat ul li i{
+    color:rgb(31, 109, 173);
+}
+.hdsd h5{
+    color:rgb(212, 142, 29);
+}
+.hdsd ul{
+    font-size: 13px;
+    padding: 10px 0;
+    list-style-type: none;
+}
+.hdsd ul li i{
+    color:rgb(212, 142, 29);
+}
+.hdsd p{
+    font-size: 13px;
+    font-weight: bold;
+    padding-top: 5px;
+}
+.dacbiet h5{
+    color:rgb(212, 29, 29);
+}
+.dacbiet ul{
+    font-size: 13px;
+    padding: 10px 0;
+    list-style-type: none;
+}
+.dacbiet ul li i{
+    color:rgb(212, 29, 29);
+}
+.chiase ul{
+    display: flex;
+    list-style-type: none;
+    padding-top: 20px;
+}
+.chiase ul li a{
+    margin-right: 10px;
+    text-decoration: none;
+    padding: 3px;
+    color: white;
+    border-radius: 3px;
+}
+.facebook{
+    background-color: #3b5998;
+}
+.twitter{
+    background-color: #1da1f2;
+}
+.instagram{
+    background-color: #c13584;
+}
+.danhgia textarea{
+    width: 550px;
+    height:100px;
+    padding: 5px;
+    margin-top: 20px;
+}
+.lquan{
+    width: 600px;
+    margin: 10px auto;
+    padding:10px;
+}
+.item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top:10px;
+}
+.left img{
+    width: 40px;
+    height: 40px;
+    padding-right: 10px;
+}
+.left {
+    display:flex;
+    align-items: center;
+}
+.right{
+    color:rgb(3, 129, 129);
+    font-weight: bold;
+}
