@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        kq = [];
+        while(true){
+            let chon = prompt("Bạn muốn làm gì(add/show/edit/remove/exit)?");
+            
+            switch(chon){
+                case "add":
+                    let cviec = prompt("Công việc bạn muốn thêm:");
+                    kq.push(cviec);
+                    break;
+
+                case "show":
+                    alert(kq);
+                    for(cv of kq){
+                        console.log(`${cv}`);
+                    }
+                    break;
+
+                case "edit":
+                    let cu = prompt("Công việc bạn muốn chỉnh sửa:");
+                    let d = 0;
+                    for(let i=0; i<kq.length; i++){
+                        if(kq[i]===cu){
+                            let moi = prompt("Công việc mới:");
+                            kq[i] = moi;
+                            d++;
+                        }
+                    }
+                    if(d===0){
+                        alert("Không tìm thấy.");
+                    }
+                    break;
+                
+                case "remove":
+                    let xoa = prompt("Công việc bạn muốn xóa:");
+                    kq1 =  [];
+                    for(cv of kq){
+                        if(cv!==xoa){
+                            kq1.push(cv);
+                        }
+                    }
+                    kq = kq1;
+                    break;
+                
+                case "exit":
+                    alert("Camonvidaden.");
+                    break;
+                
+                default:
+                    alert("Nhập không hợp lệ.");
+                    break;
+            }
+
+            if(chon==="exit"){
+                break;
+            }
+        }
+    </script>
+</body>
+</html>
