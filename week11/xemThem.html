@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque eaque enim reiciendis consectetur id. Veniam odio illum suscipit quo consectetur sed sint, dignissimos maxime at commodi. Sint sequi laboriosam sapiente distinctio tenetur, aliquam, facere deserunt vel veniam amet odit impedit iusto dolore voluptate? Quas, id iste. Non velit nesciunt, ex ipsa minima suscipit, quaerat nulla dolore harum at incidunt blanditiis eius eum optio maxime culpa dolorum, eos quod quibusdam. Voluptatem.</p>
+    <button></button>
+</body>
+<script>
+    let content = document.querySelector(".content");
+    let button = document.querySelector("button");
+    let textContent = content.textContent;
+    let preview = textContent.length>20 ? textContent.slice(0, 20) +"..." : textContent;
+    content.textContent = preview;
+    button.textContent = "Xem thêm";
+
+    let change = true;
+    button.addEventListener("click", () =>{
+        if(change){
+            content.textContent = textContent;
+            button.textContent = "Thu gọn";
+        }
+        else{
+            content.textContent = preview;
+            button.textContent = "Xem thêm";
+        }
+        change = !change;
+    })
+</script>
+</html>
+<!-- 
+    lấy giá trị: <input>-value, <div>...-textContent/innerHTML(textContent-nguyên bản) 
+     -->
