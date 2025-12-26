@@ -48,7 +48,7 @@ function renderList(list) {
 //tìm kiếm
 input.addEventListener("input", event => {
   const keyword = event.target.value.toLowerCase(); //lấy gtri hiện tại của ô input đang gõ
-  const result = restaurants.filter(function (item) { //result là mảng các item trong restaurants phù hợp với điều kiện
+  const result = restaurants.filter(item => { //result là mảng các item trong restaurants phù hợp với điều kiện
     return item.name.toLowerCase().includes(keyword); //true->giữ, false->bỏ
   });
   renderList(result);
