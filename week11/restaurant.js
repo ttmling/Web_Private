@@ -2,8 +2,8 @@ let restaurants = [];
 
 // Load dữ liệu từ cards.json, sau khi load xong mới renderList được
 fetch("cards.json")
-  .then(res => res.json())
-  .then(data => {
+  .then(res => res.json())  //chuyển dữ liệu json->js
+  .then(data => {          //data: kq sau khi đọc json, biến cục bộ
     restaurants = data;
     renderList(restaurants);
   })
@@ -23,7 +23,7 @@ function renderList(list) {
     return;
   }
 
-  list.forEach(function (item) {
+  list.forEach(item => {
     const card = document.createElement('div');
     card.className = "card";
 
@@ -46,8 +46,7 @@ function renderList(list) {
 
 
 //tìm kiếm
-input.addEventListener("input", function (event) {
-  console.log(event);
+input.addEventListener("input", event => {
   const keyword = event.target.value.toLowerCase(); //lấy gtri hiện tại của ô input đang gõ
   const result = restaurants.filter(function (item) { //result là mảng các item trong restaurants phù hợp với điều kiện
     return item.name.toLowerCase().includes(keyword); //true->giữ, false->bỏ
